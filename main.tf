@@ -354,7 +354,7 @@ data "azurerm_public_ip" "vm_ip" {
 }
 #Network interface
 resource "azurerm_network_interface" "net_int" {
-  name                = "developerVMNetInt${random_id.randomId.dec"
+  name                = "developerVMNetInt${random_id.randomId.dec}"
   location            = var.location
   resource_group_name = var.resource_group
 
