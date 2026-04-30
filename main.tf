@@ -18,12 +18,12 @@ provider "azurerm" {
 
 
 variable "resource_group" {
-  default = "azuregoat_app"
+  default = "sandbox_arthur.jost3"
 }
 
 variable "location" {
   type = string
-  default = "eastus"
+  default = "francecentral"
 }
  
 
