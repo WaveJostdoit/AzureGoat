@@ -14,6 +14,7 @@ terraform {
 
 provider "azurerm" {
   features {}
+  skip_provider_registration = true #Verifier si on peut supprimer la ligne
 }
 
 
