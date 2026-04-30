@@ -445,7 +445,7 @@ data "azurerm_subscription" "primary" {
 
 data "azurerm_client_config" "example" {
 }
-
+/*
 resource "azurerm_role_assignment" "az_role_assgn_vm" {
   scope              = "${data.azurerm_subscription.primary.id}/resourceGroups/${var.resource_group}"
   role_definition_name = "Contributor"
@@ -460,7 +460,7 @@ resource "azurerm_role_assignment" "az_role_assgn_identity" {
     azurerm_user_assigned_identity.user_id
   ]
 }
-
+*/
 
 resource "azurerm_user_assigned_identity" "user_id" {
   resource_group_name = var.resource_group
