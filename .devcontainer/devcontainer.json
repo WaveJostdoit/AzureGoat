@@ -1,0 +1,23 @@
+{
+  "name": "AzureGoat - Azure CLI + Terraform",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-cli:1": {
+      "version": "latest",
+      "installBicep": false
+    },
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.azurecli",
+        "hashicorp.terraform"
+      ]
+    }
+  },
+  "postCreateCommand": "az version && terraform version"
+}
+
