@@ -29,7 +29,7 @@ variable "location" {
 
 resource "azurerm_cosmosdb_account" "db" {
   name                = "ine-cosmos-db-data-${random_id.randomId.dec}"
-  location            = "eastus"
+  location            = var.location
   resource_group_name = var.resource_group
   offer_type          = "Standard"
   kind                = "GlobalDocumentDB"
@@ -45,7 +45,7 @@ resource "azurerm_cosmosdb_account" "db" {
   }
 
   geo_location {
-    location          = "eastus"
+    location          = var.location
     failover_priority = 0
   }
 }
