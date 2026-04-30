@@ -173,7 +173,7 @@ resource "azurerm_function_app" "function_app" {
     "JWT_SECRET" = "T2BYL6#]zc>Byuzu",
     "AZ_DB_ENDPOINT" = "${azurerm_cosmosdb_account.db.endpoint}",
     "AZ_DB_PRIMARYKEY" = "${azurerm_cosmosdb_account.db.primary_key}",
-    "CON_STR" = "${azurerm_storage_account.storage_account.primary_connection_string}"
+    "CON_STR" = "${azurerm_storage_account.storage_account.primary_connection_string}",
     "CONTAINER_NAME" = "${azurerm_storage_container.storage_container.name}"
   }
   os_type = "linux"
@@ -354,7 +354,7 @@ data "azurerm_public_ip" "vm_ip" {
 }
 #Network interface
 resource "azurerm_network_interface" "net_int" {
-  name                = "developerVMNetInt"
+  name                = "developerVMNetInt${random_id.randomId.dec"
   location            = var.location
   resource_group_name = var.resource_group
 
