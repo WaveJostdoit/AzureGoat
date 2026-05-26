@@ -1,4 +1,4 @@
-# AzureGoat : A Damn Vulnerable Azure Infrastructure
+ # AzureGoat : A Damn Vulnerable Azure Infrastructure
 
 ![1](https://user-images.githubusercontent.com/25884689/183740998-da6f7ae7-2df0-4557-a6f5-2f0040ebe0dc.png)
 
